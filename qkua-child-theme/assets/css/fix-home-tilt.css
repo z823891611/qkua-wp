@@ -1,0 +1,18 @@
+/* 修复首页整体右倾斜 */
+body, html {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+}
+
+/* 恢复文字颜色与样式 */
+a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+/* 确保首页主要内容居中 */
+#main, .site-main, .content-area {
+    margin: 0 auto !important;
+    float: none !important;
+}

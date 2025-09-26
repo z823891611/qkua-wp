@@ -1,0 +1,19 @@
+/* Minimal, layout-safe fixes */
+:root{} /* do not override theme vars */
+
+body a{ text-decoration: none; }
+body a:visited{ color: inherit; }
+body a:hover{ text-decoration: underline; }
+
+/* only affect article lists to be extra safe */
+.qk-single-content a,
+.post-list a,
+.entry-title a,
+.widget a{
+  color: inherit;
+  text-decoration: none;
+}
+.qk-single-content a:hover,
+.post-list a:hover,
+.entry-title a:hover,
+.widget a:hover{ text-decoration: underline; }

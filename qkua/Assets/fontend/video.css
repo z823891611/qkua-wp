@@ -1,0 +1,188 @@
+/*************课程视频类型*********************/
+.video-info {
+    display: flex;
+    padding: 16px 0 32px;
+}
+
+.video-info h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.video-info .video-info-left {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.video-info p {
+    margin-top: 10px;
+    line-height: 24px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.right-top .user-avatar {
+    width: 26px;
+    height: 26px;
+    margin-right: 6px;
+}
+
+.right-top a.post-user {
+    display: flex;
+    align-items: center;
+}
+
+.right-top .video-meta {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.right-top .video-count {
+    /*margin-left: 24px;*/
+    /* font-size: 14px; */
+}
+
+.video-info-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    z-index: 1;
+    color: var(--color-white);
+}
+
+.right-bottom {
+    margin-top: 16px;
+}
+
+.action-buttons .button {
+    height: 40px;
+    padding: 0 20px;
+    display: inline-block;
+    line-height: 40px;
+}
+
+.action-buttons > * {
+    margin-right: 16px;
+}
+
+button.vip-button {
+    background: linear-gradient(90deg,#fde8c3,#edd3a7);
+    color: #7e5d25;
+}
+
+.video-info-blurbg-wrap {
+    height: calc(100% + 80px);
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 0;
+}
+
+.video-info-blurbg-wrap:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.video-info-blurbg-wrap .video-info-blurbg {
+    position: absolute;
+    background-size: cover;
+    background-position: 50%;
+    width: 110%;
+    min-width: 1120px;
+    height: 496px;
+    top: 50%;
+    left: 50%;
+    margin: -260px -55%;
+    z-index: 10;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(40px);
+    -moz-filter: blur(40px);
+    -ms-filter: blur(40px);
+    filter: blur(40px);
+}
+
+.qk-video-single-header {
+    position: relative;
+}
+
+#tabs.tabs .box {
+    margin-bottom: var(--gap);
+}
+
+#tabs.tabs .box .tabs-nav {
+    height: 58px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#video-chapters .chapter {
+    padding: 16px;
+    color: var(--color-text-primary);
+    border-radius: var(--radius);
+}
+
+#video-chapters .chapter h3 {
+    margin-bottom: 2px;
+}
+
+#video-chapters .chapter-desc {
+    margin-bottom: 8px;
+    line-height: 24px;
+    font-size: 13px;
+    color: var(--color-text-regular);
+}
+
+#video-chapters .video-list li {
+    line-height: 40px;
+    height: 40px;
+    font-size: 14px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#video-chapters .video-list li:last-of-type {
+    margin:0;
+}
+
+#video-chapters .video-list i.ri-play-circle-fill {
+    font-size: 18px;
+    line-height: 18px;
+    margin-right: 8px;
+    color: var(--color-text-secondary);
+}
+
+#video-chapters .video-list i.ri-live-line {
+    font-size: 16px;
+    line-height: 16px;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .video-info h1 {
+        font-size: 18px;
+    }
+    
+    .video-info p {
+        font-size: 13px;
+    }
+    
+    .action-buttons .button {
+        height: 32px;
+        line-height: 32px;
+    }
+}

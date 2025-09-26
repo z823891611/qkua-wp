@@ -1,0 +1,285 @@
+.sidebar-menu {
+    display: none;
+}
+
+.header #top-menu {
+    display: none;
+}
+
+.header .center-entry {
+    display: none !important;
+}
+
+.header .right-entry > * {
+    display: none !important;
+}
+
+.header .right-entry > .menu-user-box {
+    display: block !important;
+}
+
+.header .right-entry > .menu-publish-box {
+    display: block !important;
+}
+
+.header .header-top {
+    box-shadow: none;
+}
+
+.footer .box:before {
+    display:none;
+}
+
+footer.footer {
+    display: none;
+}
+
+/**********编辑器开始***********/
+.write-page .site-main {
+    padding: 30px;
+    margin-bottom: 86px;
+    transition: margin .3s;
+}
+
+#write-head .write-title {
+    border-bottom: 1px solid var(--border-color-base);
+    padding-top: 10px;
+}
+
+#write-editor-box {
+    margin: 0 -10px;
+}
+
+/************发布设置****************/
+
+.write-thumb {
+    position: relative;
+    width: 150px;
+    height: 100px;
+}
+
+.write-thumb label {
+    display: flex;
+    border-radius: var(--radius);
+    border: 1px dashed;
+    border-color: #8493a5;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+}
+
+.WriteCoverV2-buttonGroup {
+    display: none;
+    height: 32px;
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    transform: translateX(-50%);
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    border: 0px;
+    align-items: center;
+    font-size: 14px;
+    color: var(--color-white);
+    grid-gap: 8px;
+}
+
+.write-thumb:hover .WriteCoverV2-buttonGroup{
+    display: flex;
+    justify-content: center;
+}
+
+.WriteCoverV2-buttonGroup > span {
+    width: 47px;
+    display: block;
+    text-align: center;
+        cursor: pointer;
+}
+
+.post-setting .setting-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 16px;
+    color: var(--color-text-secondary);
+    font-size: 15px;
+}
+
+.post-setting .setting-title:before,.post-setting .setting-title:after {
+    content: "";
+    height: 1px;
+    background-color: var(--border-color-base);
+    flex: 1 1 0%;
+    width: 100%;
+}
+/**********底部**************/
+.write-footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 1003;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-main-color);
+}
+
+
+.write-footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+}
+
+.button-submit {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 220px;
+}
+
+.button-submit button {
+    flex: 1;
+    padding: 10px;
+}
+
+.button-submit .draft{
+    margin-right: var(--gap);
+    background-color: var(--bg-text-color);
+    color: var(--color-primary);
+}
+
+.button-submit .publish{
+    background-color: var(--theme-color);
+}
+/******侧边*******/
+.post-setting > div {
+    padding: 16px;
+}
+
+.post-setting > div p {
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    padding-bottom: var(--gap);
+}
+
+.post-setting > div input{
+    background-color: var(--bg-body-color);
+}
+
+.write-select-box .el-select {
+    width:100%;
+}
+
+.write-select-box .el-select .el-select__tags input{
+    background: none;
+}
+
+.post-setting .write-role-settings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-setting .write-role-settings span {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+}
+
+.post-setting .write-role-settings .el-input-number--small {
+    width: 100px;
+}
+
+/*******textarea编辑器*********/
+
+#write-editor-box i.mce-i-wp_adv::before {
+    content: "\f347";
+}
+
+#write-editor-box .wp-editor-container textarea.wp-editor-area {
+    opacity: 0;
+}
+
+#write-editor-box div#wp-post_content-editor-container {
+    border: none;
+}
+
+#write-editor-box .mce-top-part {
+    position: fixed;
+    top: var(--top-menu-height);
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    border: 1px solid #f3f3f6;
+    background-color: var(--bg-main-color);
+}
+
+#write-editor-box div.mce-toolbar-grp {
+    border: none;
+    background-color: var(--bg-main-color);
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: calc(var(--wrapper-width));
+    /*padding: 0 24px;*/
+}
+
+/*#write-editor-box  #post_content_ifr {*/
+/*    transition: height .3s;*/
+/*}*/
+
+#write-editor-box .mce-toolbar .mce-btn-group .mce-btn.mce-active, .mce-toolbar .mce-btn-group .mce-btn:active, .qt-dfw.active {
+    border: 1px solid transparent;
+}
+
+#write-editor-box .mce-toolbar .mce-btn-group .mce-btn, #write-editor-box .qt-dfw {
+    border-color: transparent!important;
+    border-radius: 4px;
+    transition: .2s;
+    margin: 4px;
+}
+
+#write-editor-box .mce-container, #write-editor-box .mce-container *, #write-editor-box .mce-toolbar .mce-ico, #write-editor-box .mce-widget, #write-editor-box .mce-widget *, #write-editor-box .media-modal {
+    color: var(--color-text-regular);
+    border-color: var(--bg-body-color);
+    border-radius: var(--radius);
+}
+
+#write-editor-box .mce-top-part::before {
+    display:none;
+}
+
+#write-editor-box .mce-panel {
+    background: var(--bg-main-color);
+}
+
+#write-editor-box div.mce-statusbar {
+    visibility: hidden;
+}
+
+/***标题***/
+.write-select-row-top textarea {
+    flex-grow: 1;
+    border-bottom: 1px solid #efefef;
+}
+
+.write-textarea {
+    width: 100%;
+    border: 0;
+    font-size: 24px;
+    padding: 10px 0;
+    resize: none;
+    display: block;
+    min-height: 30px;
+    overflow: hidden;
+    background: var(--bg-main-color);
+}
+
+@media screen and (max-width:768px){
+    .write-page .site-main {
+        padding: 12px;
+        padding-top: 38px;
+    }
+}

@@ -1,0 +1,21 @@
+/* steam-front-qkua.css
+ * Small neutralizing file to avoid purple underlined post title links unexpectedly.
+ * If your theme elsewhere defines strong link color, adjust or remove.
+ */
+
+/* Reset link color inside post list area to theme primary color without underline */
+.qk-single-content .site-main a,
+.qk-single-content .site-main a:link,
+.qk-single-content .site-main a:visited {
+    color: var(--color-primary, #3858f6) !important;
+    text-decoration: none !important;
+}
+
+.qk-single-content .site-main a:hover {
+    text-decoration: underline !important;
+}
+
+/* tiny fix for write page selects - keep default styling */
+.write-select-box .el-select .el-input__inner {
+    color: inherit !important;
+}

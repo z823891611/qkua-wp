@@ -1,0 +1,81 @@
+/* ========= 黑底卡片 + 单行标签 ========= */
+.steam-post-content{ margin:16px 0 !important; }
+
+.steam-post-content .steam-db-links{
+  display:flex !important;
+  flex-wrap:nowrap !important;
+  overflow-x:auto !important;
+  gap:10px !important;
+  padding:10px 12px !important;
+  border-radius:10px !important;
+  background:#0f1216 !important;
+  -webkit-overflow-scrolling:touch !important;
+  scrollbar-width:none !important;
+  white-space:nowrap !important;
+  margin: 6px 0 12px !important;
+}
+.steam-post-content .steam-db-links::-webkit-scrollbar{ display:none !important; }
+.steam-post-content .steam-db-links .steamdb-btn{
+  flex:0 0 auto !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  padding:8px 14px !important;
+  border-radius:9999px !important;
+  background:#1f2937 !important;
+  color:#fff !important;
+  text-decoration:none !important;
+  font-size:13px !important;
+  line-height:1 !important;
+}
+.steam-post-content .steam-db-links .steamdb-btn:hover{ background:#111 !important; }
+
+.steam-post-content .steam-card-inner{
+  display:flex !important;
+  gap:14px !important;
+  align-items:flex-start !important;
+  padding:14px !important;
+  border-radius:12px !important;
+  background:#0b0f14 !important;
+  color:#e5eef6 !important;
+  box-shadow:0 6px 20px rgba(0,0,0,.35) !important;
+}
+.steam-post-content .steam-card-left{ flex:0 0 300px !important; }
+.steam-post-content .steam-card-left img{
+  width:300px !important;
+  max-width:100% !important;
+  border-radius:8px !important;
+  display:block !important;
+  box-shadow:0 8px 18px rgba(0,0,0,.35) !important;
+}
+.steam-post-content .steam-card-right{ flex:1 !important; min-width:260px !important; }
+.steam-post-content .steam-card-title{ margin:0 0 8px !important; color:#7dd3fc !important; font-size:18px !important; font-weight:700 !important; }
+.steam-post-content .steam-card-desc{ color:#c7d3da !important; line-height:1.6 !important; margin:4px 0 8px !important; font-size:13px !important; }
+
+.steam-post-content .steam-card-meta{ display:flex !important; align-items:center !important; gap:10px !important; flex-wrap:wrap !important; }
+.steam-post-content .steam-card-price{ color:#22c55e !important; font-weight:700 !important; font-size:15px !important; }
+.steam-post-content .steam-buy-btn{
+  display:inline-block !important;
+  background:#16a34a !important;
+  color:#fff !important;
+  padding:7px 14px !important;
+  border-radius:8px !important;
+  text-decoration:none !important;
+  font-weight:700 !important;
+}
+.steam-post-content .steam-buy-btn:hover{ background:#15803d !important; }
+
+@media (max-width: 880px){
+  .steam-post-content .steam-card-inner{ flex-direction:column !important; }
+  .steam-post-content .steam-card-left{ flex:0 0 auto !important; }
+  .steam-post-content .steam-db-links{ padding:8px 10px !important; gap:8px !important; }
+}
+
+/* === Hide broken tag icon images in tag areas (src is empty) === */
+.post-tags img.w-h[src=""],
+.article-tags img.w-h[src=""],
+.entry-footer .tags img.w-h[src=""],
+.entry .tags img.w-h[src=""],
+.post-meta .tags img.w-h[src=""] {
+  display: none !important;
+}
